@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KazeraaID Livery TOE3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+
+    <a href="../index.html" class="back-btn">
+    ←
+    </a>
+
+    <h3>KazeraaID Store</h3>
+
+    </div>
+  <nav>
+    <div class="logo">Kazeraa<span>ID</span></div>
+    <a href="#livery">Livery</a>
+  </nav>
+
+  <section class="hero">
+    <h1>KazeraaID Livery TOE3</h1>
+    <p>Katalog livery TOE3 keren, rapi, dan siap download.</p>
+    <a href="#livery" class="btn">Lihat Livery</a>
+  </section>
+
+  <section id="livery" class="section">
+    <h2>Pilih Base Truck</h2>
+
+    <div class="kategori">
+      <button class="active" onclick="filterLivery('all', this)">Semua</button>
+      <button onclick="filterLivery('Volvo', this)">Volvo</button>
+      <button onclick="filterLivery('Scania', this)">Scania</button>
+      <button onclick="filterLivery('UD Quester', this)">UD Quester</button>
+      <button onclick="filterLivery('Trailer', this)">Trailer</button>
+      <button onclick="filterLivery('Hino', this)">Hino</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari nama livery..." onkeyup="searchLivery()">
+    </div>
+
+    <div class="container">
+
+      <div class="card" data-kategori="Volvo" data-nama="Blade of Kibou">
+        <img src="img/volvo1.jpg" alt="Blade of Kibou">
+        <div class="card-content">
+          <span>Volvo FH16</span>
+          <h3>Blade of Kibou</h3>
+          <p>Livery clean modern dengan kombinasi warna tajam dan detail premium.</p>
+          <button onclick="openDetail(
+            'Blade of Kibou',
+            'Volvo FH16',
+            'img/volvo1.jpg',
+            'Livery clean modern dengan kombinasi warna tajam dan detail premium.',
+            'https://www.mediafire.com/file/xxxxx'
+          )">Detail</button>
+        </div>
+      </div>
+
+      <div class="card" data-kategori="Scania" data-nama="JDM Liberty Walk">
+        <img src="img/scania1.jpg" alt="JDM Liberty Walk">
+        <div class="card-content">
+          <span>Scania S Series</span>
+          <h3>JDM Liberty Walk</h3>
+          <p>Desain street racing dengan gaya JDM, agresif, dan elegan.</p>
+          <button onclick="openDetail(
+            'JDM Liberty Walk',
+            'Scania S Series',
+            'img/scania1.jpg',
+            'Desain street racing dengan gaya JDM, agresif, dan elegan.',
+            'https://www.mediafire.com/file/yyyyy'
+          )">Detail</button>
+        </div>
+      </div>
+
+      <div class="card" data-kategori="UD Quester" data-nama="Street Race">
+        <img src="img/ud1.jpg" alt="Street Race">
+        <div class="card-content">
+          <span>UD Quester</span>
+          <h3>Street Race</h3>
+          <p>Livery racing simpel dengan aksen garis tajam dan aura jalanan.</p>
+          <button onclick="openDetail(
+            'Street Race',
+            'UD Quester',
+            'img/ud1.jpg',
+            'Livery racing simpel dengan aksen garis tajam dan aura jalanan.',
+            'https://www.mediafire.com/file/zzzzz'
+          )">Detail</button>
+        </div>
+      </div>
+
+      <div class="card" data-kategori="Trailer" data-nama="Lightning Trailer">
+        <img src="img/trailer1.jpg" alt="Lightning Trailer">
+        <div class="card-content">
+          <span>Trailer</span>
+          <h3>Lightning Trailer</h3>
+          <p>Desain trailer keren dengan nuansa merah racing dan efek cepat.</p>
+          <button onclick="openDetail(
+            'Lightning Trailer',
+            'Trailer',
+            'img/trailer1.jpg',
+            'Desain trailer keren dengan nuansa merah racing dan efek cepat.',
+            'https://www.mediafire.com/file/aaaaa'
+          )">Detail</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal" id="detailModal">
+    <div class="modal-box">
+      <span class="close" onclick="closeDetail()">×</span>
+      <img id="modalImg" src="" alt="Preview Livery">
+      <h2 id="modalNama"></h2>
+      <h4 id="modalTruck"></h4>
+      <p id="modalDesk"></p>
+
+      <div class="modal-btn">
+        <a href="#" class="download" target="_blank">Download</a>
+        <a href="https://wa.me/6289524501105" class="wa" target="_blank">Order Custom</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 KazeraaID • Livery TOE3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

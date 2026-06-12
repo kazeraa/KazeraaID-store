@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KazeraaID Top Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="../index.html" class="back-btn">←</a>
+  <h3>Top Up Game</h3>
+</div>
+
+<section class="hero">
+  <h1>Top Up Game</h1>
+  <p>Top up cepat, aman, dan mudah lewat KazeraaID.</p>
+</section>
+
+<section class="running-text">
+  <div>
+    🎉 KazeraaID Top Up Game • Proses cepat • Harga bersahabat • Fast response • Order langsung via WhatsApp •
+  </div>
+</section>
+
+<section class="search-box">
+  <input type="text" id="searchInput" placeholder="Cari game..." onkeyup="searchGame()">
+</section>
+
+<section class="promo-banner">
+  <div>
+    <span>🎁 PROMO MINGGUAN</span>
+    <h2>Top Up Game Mulai Rp 2.000</h2>
+    <p>Mobile Legends, Free Fire, PUBG, Roblox, dan game lainnya tersedia.</p>
+  </div>
+
+  <button onclick="document.getElementById('gameSection').scrollIntoView({behavior:'smooth'})">
+    Lihat Game
+  </button>
+</section>
+
+<section class="popular-section">
+
+    <h2>🔥 Game Populer</h2>
+
+    <div class="popular-grid">
+
+        <div class="popular-card">
+            <div class="popular-icon">💎</div>
+            <h3>Mobile Legends</h3>
+            <p>Paling banyak dipesan</p>
+        </div>
+
+        <div class="popular-card">
+            <div class="popular-icon">🔥</div>
+            <h3>Free Fire</h3>
+            <p>Top up favorit</p>
+        </div>
+
+        <div class="popular-card">
+            <div class="popular-icon">🟦</div>
+            <h3>Roblox</h3>
+            <p>Top up Robux favorit</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="game-section" id="gameSection">
+  <h2>Pilih Game</h2>
+
+  <div class="game-grid">
+
+    <div class="game-card" onclick="openTopup('Mobile Legends')">
+      <span class="badge hot">HOT</span>
+      <div class="game-icon">💎</div>
+      <h3>Mobile Legends</h3>
+      <p>Diamond MLBB</p>
+    </div>
+
+    <div class="game-card" onclick="openTopup('Free Fire')">
+      <span class="badge popular">POPULER</span>
+      <div class="game-icon">🔥</div>
+      <h3>Free Fire</h3>
+      <p>Diamond FF</p>
+    </div>
+
+    <div class="game-card" onclick="openTopup('PUBG Mobile')">
+      <div class="game-icon">🔫</div>
+      <h3>PUBG Mobile</h3>
+      <p>UC PUBG</p>
+    </div>
+
+    <div class="game-card" onclick="openTopup('Honor Of Kings')">
+      <div class="game-icon">⚔️</div>
+      <h3>Honor Of Kings</h3>
+      <p>Token HOK</p>
+    </div>
+
+    <div class="game-card" onclick="openTopup('Genshin Impact')">
+      <div class="game-icon">🌙</div>
+      <h3>Genshin Impact</h3>
+      <p>Genesis Crystal</p>
+    </div>
+
+    <div class="game-card" onclick="openTopup('Roblox')">
+      <span class="badge best">BEST</span>
+      <div class="game-icon">🟦</div>
+      <h3>Roblox</h3>
+      <p>Robux</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="info-box">
+  <h3>Catatan Top Up</h3>
+  <p>Pastikan ID dan server benar sebelum order. Kesalahan input ID bukan tanggung jawab admin.</p>
+  <p>Proses top up dilakukan setelah pembayaran dikonfirmasi.</p>
+</section>
+
+<section class="payment-info">
+  <h3>Metode Pembayaran</h3>
+
+  <div class="payment-grid">
+    <div>DANA</div>
+    <div>GoPay</div>
+    <div>OVO</div>
+    <div>QRIS</div>
+  </div>
+</section>
+
+<section class="status-box">
+  <div>
+    <h3>🟢 Status Layanan</h3>
+    <p>Top up sedang aktif dan siap melayani order.</p>
+  </div>
+
+  <span>ONLINE</span>
+</section>
+
+<section class="feature-section">
+
+    <h2>Mengapa Memilih KazeraaID?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Proses Cepat</h3>
+            <p>Order diproses secepat mungkin setelah pembayaran dikonfirmasi.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Aman & Terpercaya</h3>
+            <p>Data akun pelanggan aman dan tidak dibagikan ke pihak lain.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Fast Response</h3>
+            <p>Admin siap membantu jika ada kendala atau pertanyaan.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💎</div>
+            <h3>Harga Bersahabat</h3>
+            <p>Harga kompetitif dengan kualitas pelayanan terbaik.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq-section">
+  <h2>FAQ Top Up</h2>
+
+  <div class="faq-card">
+    <h3>Berapa lama proses top up?</h3>
+    <p>Biasanya diproses setelah pembayaran dikonfirmasi oleh admin.</p>
+  </div>
+
+  <div class="faq-card">
+    <h3>Kalau salah ID gimana?</h3>
+    <p>Pastikan ID dan server benar sebelum order. Kesalahan input bukan tanggung jawab admin.</p>
+  </div>
+
+  <div class="faq-card">
+    <h3>Order lewat mana?</h3>
+    <p>Order akan langsung diarahkan ke WhatsApp admin KazeraaID.</p>
+  </div>
+</section>
+
+<section class="stats-section">
+
+    <div class="stats-card">
+        <h3>10K+</h3>
+        <p>Transaksi</p>
+    </div>
+
+    <div class="stats-card">
+        <h3>5K+</h3>
+        <p>Pelanggan</p>
+    </div>
+
+    <div class="stats-card">
+        <h3>98%</h3>
+        <p>Kepuasan</p>
+    </div>
+
+    <div class="stats-card">
+        <h3>24/7</h3>
+        <p>Support</p>
+    </div>
+
+</section>
+
+<section class="testimonial-section">
+
+    <h2>Apa Kata Pelanggan?</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Top up cepat dan aman, admin juga ramah."
+            </p>
+            <h4>- Andi</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Harga murah, proses nggak sampai 5 menit."
+            </p>
+            <h4>- Rizky</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Udah langganan dari lama, recommended!"
+            </p>
+            <h4>- Budi</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal" id="topupModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeTopup()">×</button>
+
+    <h2 id="gameTitle">Mobile Legends</h2>
+    <p class="modal-desc">Pilih nominal top up yang kamu mau.</p>
+
+    <input type="text" id="userId" placeholder="Masukkan ID / User ID">
+    <input type="text" id="serverId" placeholder="Server ID jika ada">
+
+    <h3>Pilih Nominal</h3>
+
+    <div class="nominal-grid" id="nominalGrid"></div>
+
+    <button class="order-btn" onclick="orderWhatsApp()">
+      Order via WhatsApp
+    </button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 KazeraaID • Top Up Game</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

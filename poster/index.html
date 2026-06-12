@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazeraaID Poster Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="../index.html" class="back-btn">←</a>
+        <h3>Poster Design</h3>
+    </div>
+
+    <section class="hero">
+
+        <h1>🎨 Poster Design</h1>
+
+        <p>
+            Jasa desain poster, banner, logo dan kebutuhan promosi digital lainnya.
+        </p>
+
+    </section>
+
+    <section class="running-text">
+
+        <div>
+            🎨 Logo Design • Poster Promosi • Banner WhatsApp • Thumbnail YouTube • Feed Instagram •
+        </div>
+
+    </section>
+
+    <section class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari desain..."
+        onkeyup="searchDesign()">
+
+    </section>
+
+    <section class="popular-section">
+
+        <h2>🔥 Desain Unggulan</h2>
+
+        <div class="popular-grid">
+
+            <div class="popular-card">
+                <div class="popular-icon">🎨</div>
+                <h3>Logo Design</h3>
+                <p>Logo profesional untuk brand.</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">🖼️</div>
+                <h3>Poster Promosi</h3>
+                <p>Poster modern dan menarik.</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">🎬</div>
+                <h3>Thumbnail YouTube</h3>
+                <p>Thumbnail HD dan eye catching.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="feature-section">
+
+        <h2>⭐ Mengapa Memilih KazeraaID?</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>HD Quality</h3>
+                <p>Desain berkualitas tinggi.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Custom Design</h3>
+                <p>Desain sesuai keinginan.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Fast Response</h3>
+                <p>Siap membantu dan support.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Modern Style</h3>
+                <p>Desain elegan dan kekinian.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Semua Layanan -->
+<section class="project-section">
+
+    <h2>🖼️ Semua Layanan</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card"
+        onclick="openDetail(
+        '🎨 Logo Design',
+        'Jasa pembuatan logo profesional.',
+        'HD Quality, PNG Transparan, Modern Style, Custom Request'
+        )">
+
+            <div class="project-icon">🎨</div>
+
+            <h3>Logo Design</h3>
+
+            <p>Logo profesional.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '🖼️ Poster Promosi',
+        'Poster promosi untuk bisnis dan toko.',
+        'HD Quality, Modern Design, Social Media Ready'
+        )">
+
+            <div class="project-icon">🖼️</div>
+
+            <h3>Poster Promosi</h3>
+
+            <p>Poster untuk bisnis dan toko.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '📢 Banner Sosial Media',
+        'Desain banner modern untuk sosial media.',
+        'Facebook Banner, WhatsApp Banner, HD Quality'
+        )">
+
+            <div class="project-icon">📢</div>
+
+            <h3>Banner Sosial Media</h3>
+
+            <p>Banner modern.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '🎬 Thumbnail YouTube',
+        'Thumbnail menarik dan eye catching.',
+        'HD Quality, Custom Design, Clickbait Style'
+        )">
+
+            <div class="project-icon">🎬</div>
+
+            <h3>Thumbnail YouTube</h3>
+
+            <p>Thumbnail HD.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '📱 Feed Instagram',
+        'Desain feed Instagram modern.',
+        'Grid Design, Story Design, HD Quality'
+        )">
+
+            <div class="project-icon">📱</div>
+
+            <h3>Feed Instagram</h3>
+
+            <p>Desain feed modern.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '🚛 Poster Livery TOE3',
+        'Poster khusus livery Truckers Of Europe 3.',
+        'HD Quality, Modern Style, Custom Request'
+        )">
+
+            <div class="project-icon">🚛</div>
+
+            <h3>Poster Livery TOE3</h3>
+
+            <p>Poster khusus livery.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '🛒 Banner Toko Digital',
+        'Banner untuk toko dan marketplace.',
+        'WhatsApp Banner, Store Banner, HD Quality'
+        )">
+
+            <div class="project-icon">🛒</div>
+
+            <h3>Banner Toko Digital</h3>
+
+            <p>Banner toko modern.</p>
+
+        </div>
+
+
+        <div class="project-card"
+        onclick="openDetail(
+        '✨ Custom Design',
+        'Desain sesuai kebutuhan pelanggan.',
+        'Poster, Logo, Banner, Thumbnail'
+        )">
+
+            <div class="project-icon">✨</div>
+
+            <h3>Custom Design</h3>
+
+            <p>Desain sesuai request.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal" id="detailModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn"
+        onclick="closeDetail()">
+            ×
+        </button>
+
+        <h2 id="detailTitle"></h2>
+
+        <p id="detailDesc"></p>
+
+        <h3>Fitur:</h3>
+
+        <ul id="detailFeatures"></ul>
+
+        <a href="https://wa.me/6289524501105"
+        class="wa-btn"
+        target="_blank">
+
+            Hubungi Admin
+
+        </a>
+
+    </div>
+
+</div>
+
+    <footer>
+
+        <p>
+            © 2026 KazeraaID • Poster Design
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazeraaID Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+
+    <a href="../index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h3>KazeraaID Store</h3>
+
+    </div>
+    
+    <main class="app page active-page" id="homePage">
+
+        <!-- Banner -->
+  <section class="slider">
+   <div class="slide active"
+style="background-image:url('https://files.catbox.moe/syptmp.png?v=2')"></div>
+
+<div class="slide"
+style="background-image:url('https://files.catbox.moe/c8998b.png?v=2')"></div>
+
+<div class="slide"
+style="background-image:url('https://files.catbox.moe/988308.png?v=2')"></div>
+
+   </section>
+
+        <!-- Profile -->
+        <section class="profile">
+            <img src="https://files.catbox.moe/rs07l6.png?v=10"
+class="logo-img"
+alt="Logo KazeraaID">
+            
+            <div>
+                <h2>KazeraaID Store <span>✓</span></h2>
+                <p>⭐ 4.9 | Free Fee Admin</p>
+            </div>
+            
+        </section>
+
+        <!-- Statistik -->
+        <section class="stats">
+            <div>
+                <h3>12.5K</h3>
+                <p>Total Terjual</p>
+            </div>
+
+            <div>
+                <h3>8.2K</h3>
+                <p>Pelanggan</p>
+            </div>
+
+            <div>
+                <h3>98%</h3>
+                <p>Kepuasan</p>
+            </div>
+        </section>
+<section class="search-section" id="searchSection">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Cari produk..."
+        onkeyup="searchProduct()"
+    >
+</section>
+        <!-- Produk -->
+        <section class="products-section">
+
+            <h2>Hosting Dan Kebutuhan Bot WhatsApp</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="icon">▰</div>
+                    <h3>Panel Pterodactyl</h3>
+                </div>
+
+                <div class="product-card">
+                    <div class="icon">⚙</div>
+                    <h3>Jasa Pembuatan Fitur</h3>
+                </div>
+
+                <div class="product-card">
+                    <div class="icon">▣</div>
+                    <h3>Sewa Bot & Jadibot</h3>
+                </div>
+
+                <div class="product-card">
+                    <div class="icon">◉</div>
+                    <h3>Sell Script Bot</h3>
+                </div>
+
+                <div class="product-card">
+                    <div class="icon">◍</div>
+                    <h3>Jasa Rename Script</h3>
+                </div>
+
+                <div class="product-card">
+                    <div class="icon">🌐</div>
+                    <h3>Domain & Hosting</h3>
+                </div>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+
+        <div class="modal-box">
+
+            <button class="close-btn" onclick="closeModal()">
+                ×
+            </button>
+
+            <h2 id="modalTitle">
+                Panel Pterodactyl
+            </h2>
+
+            <p class="modal-price" id="modalPrice">
+                Rp 2.000
+            </p>
+
+            <p class="modal-desc">
+                Panel Pterodactyl hosting bot/game dengan performa stabil dan harga terjangkau.
+            </p>
+
+            <h3>Pilih Varian:</h3>
+
+            <div class="variant-grid">
+
+                <button onclick="selectVariant(this,'1GB RAM',2000)" class="active">
+                    1GB RAM
+                    <span>Rp 2.000</span>
+                </button>
+
+                <button onclick="selectVariant(this,'2GB RAM',3000)">
+                    2GB RAM
+                    <span>Rp 3.000</span>
+                </button>
+
+                <button onclick="selectVariant(this,'3GB RAM',4000)">
+                    3GB RAM
+                    <span>Rp 4.000</span>
+                </button>
+
+                <button onclick="selectVariant(this,'4GB RAM',5000)">
+                    4GB RAM
+                    <span>Rp 5.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'5GB RAM',6000)">
+                    5GB RAM
+                    <span>Rp 6.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'6GB RAM',7000)">
+                    6GB RAM
+                    <span>Rp 7.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'7GB RAM',8000)">
+                    7GB RAM
+                    <span>Rp 8.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'8GB RAM',9000)">
+                    8GB RAM
+                    <span>Rp 9.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'9GB RAM',10000)">
+                    9GB RAM
+                    <span>Rp 10.000</span>
+                </button>
+                
+                <button onclick="selectVariant(this,'Unli RAM',12000)">
+                    Unlimited
+                    <span>Rp 12.000</span>
+                </button>
+
+            </div>
+
+            <button class="cart-btn" onclick="addToCart()">
+                Tambah ke Keranjang
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Keranjang -->
+    <section class="cart-section page" id="cartPage">
+
+        <h2>Keranjang Belanja</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">
+                Rp 0
+            </strong>
+        </div>
+
+        <button class="checkout-btn" onclick="goToPayment()">
+    Lanjut ke Pembayaran
+</button>
+   </section>
+
+<section class="payment-section page" id="paymentPage">
+    <h2>Metode Pembayaran</h2>
+
+    <div class="payment-list">
+        <label class="payment-card">
+            <input type="radio" name="payment" value="Dana" checked>
+            <span>DANA</span>
+        </label>
+
+        <label class="payment-card">
+            <input type="radio" name="payment" value="OVO">
+            <span>OVO</span>
+        </label>
+
+        <label class="payment-card">
+            <input type="radio" name="payment" value="GoPay">
+            <span>GoPay</span>
+        </label>
+
+        <label class="payment-card">
+            <input type="radio" name="payment" value="QRIS">
+            <span>QRIS</span>
+        </label>
+    </div>
+    <div class="payment-detail">
+    <h3 id="paymentName">DANA</h3>
+
+    <div class="payment-row">
+        <span id="paymentLabel">Nomor Pembayaran:</span>
+        <strong id="paymentNumber">085813708397</strong>
+    </div>
+
+    <h2 id="paymentTotal">Rp 0</h2>
+
+    <button class="copy-btn" onclick="copyPayment()">
+        Salin Nomor Pembayaran
+    </button>
+
+    <button class="wa-btn" onclick="checkoutWhatsApp()">
+        Lanjutkan ke WhatsApp
+    </button>
+</div>
+</section>
+<section class="profile-page page" id="profilePage">
+    <div class="profile-card-big">
+        <div class="logo big-logo">KZ</div>
+        <h2>KazeraaID Store</h2>
+        <p>Digital Service, Bot WhatsApp, Panel & Hosting</p>
+    </div>
+
+    <div class="contact-list">
+        <div class="contact-item">WhatsApp <span>0895-2450-1105</span></div>
+        <div class="contact-item">Telegram <span>@KazeraaID</span></div>
+        <div class="contact-item">Instagram <span>@kazeraaid</span></div>
+        <div class="contact-item">Discord <span>KazeraaID</span></div>
+    </div>
+</section>
+<nav class="bottom-nav">
+
+    <a href="#" class="active" onclick="showPage('homePage')">
+        <i class="fa-solid fa-house"></i>
+        <span>Beranda</span>
+    </a>
+
+    <a href="#searchSection">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Cari</span>
+    </a>
+
+    <a href="#" class="cart-nav" onclick="showPage('cartPage')">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Keranjang</span>
+        <div id="cartBadge">0</div>
+    </a>
+
+    <a href="#" onclick="showPage('profilePage')">
+        <i class="fa-solid fa-user"></i>
+        <span>Profil</span>
+    </a>
+
+</nav>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

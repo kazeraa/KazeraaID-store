@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazeraaID Roblox Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+
+        <a href="../index.html" class="back-btn">
+            ←
+        </a>
+
+        <h3>Roblox Development</h3>
+
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>🛠 Roblox Development</h1>
+
+        <p>
+            Jasa pembuatan script Roblox, sistem custom,
+            dan pengembangan game sesuai kebutuhan.
+        </p>
+
+    </section>
+    
+    <section class="running-text">
+    <div>
+        🛠 KazeraaID Roblox Development • Custom System • Clean Script • Optimized • Fast Response • Support Pemasangan •
+    </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-box">
+
+        <input
+        type="text"
+        placeholder="Cari sistem..."
+        id="searchInput"
+        onkeyup="searchScript()">
+
+    </section>
+
+    <!-- Project Unggulan -->
+    <section class="popular-section">
+
+        <h2>🔥 Project Unggulan</h2>
+
+        <div class="popular-grid">
+
+            <div class="popular-card">
+                <div class="popular-icon">☕</div>
+                <h3>Cafe System</h3>
+                <p>Roleplay & Management</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">📋</div>
+                <h3>Report System</h3>
+                <p>Discord Integration</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">🎵</div>
+                <h3>Music Player</h3>
+                <p>Queue & Volume</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="feature-section">
+
+    <h2>⭐ Mengapa Memilih KazeraaID?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Clean Script</h3>
+            <p>Struktur rapi dan mudah dikembangkan.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Optimized</h3>
+            <p>Performa ringan dan minim lag.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Fast Response</h3>
+            <p>Siap membantu jika ada kendala.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🛠️</div>
+            <h3>Custom Request</h3>
+            <p>Sistem dapat dibuat sesuai kebutuhan.</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Semua Script -->
+    <section class="script-section">
+
+        <h2>📜 Semua Sistem</h2>
+
+        <div class="script-grid">
+
+    <div class="script-card" onclick="openDetail(
+        '☕ Cafe System',
+        'Custom roleplay cafe system untuk game Roblox.',
+        'Shift System, Rank Staff, GUI Order, Customer System, Admin Panel'
+    )">
+        <div class="script-icon">☕</div>
+        <h3>Cafe System</h3>
+        <p>Custom cafe game system.</p>
+    </div>
+
+    <div class="script-card" onclick="openDetail(
+        '📋 Report System',
+        'Sistem report player yang terhubung ke Discord webhook.',
+        'Report GUI, Dropdown Player, Reason Report, Detail Box, Discord Webhook'
+    )">
+        <div class="script-icon">📋</div>
+        <h3>Report System</h3>
+        <p>Discord webhook integration.</p>
+    </div>
+
+    <div class="script-card" onclick="openDetail(
+        '🎵 Music Player',
+        'Sistem music player manual untuk Roblox.',
+        'Play Pause, Skip Music, Queue Song, Volume Control, Now Playing'
+    )">
+        <div class="script-icon">🎵</div>
+        <h3>Music Player</h3>
+        <p>Queue, Skip dan Volume.</p>
+    </div>
+
+    <div class="script-card" onclick="openDetail(
+        '🎛️ Top Bar',
+        'Top bar custom dengan icon modern dan fitur toggle.',
+        'Aura Toggle, Spectate Toggle, Dance Toggle, Icon Animation'
+    )">
+        <div class="script-icon">🎛️</div>
+        <h3>Top Bar</h3>
+        <p>Animated icon system.</p>
+    </div>
+
+    <div class="script-card" onclick="openDetail(
+        '📻 Boombox System',
+        'Sistem boombox custom untuk memainkan audio di game.',
+        'Play Audio, Stop Audio, Range System, Tool System, Audio Holder'
+    )">
+        <div class="script-icon">📻</div>
+        <h3>Boombox System</h3>
+        <p>Audio system custom.</p>
+    </div>
+
+    <div class="script-card" onclick="openDetail(
+        '🚪 Teleport System',
+        'Sistem teleport dan checkpoint untuk map Roblox.',
+        'Checkpoint Save, Teleport Part, Cooldown, Last Position, Return System'
+    )">
+        <div class="script-icon">🚪</div>
+        <h3>Teleport System</h3>
+        <p>Checkpoint & return position.</p>
+    </div>
+
+</div>
+
+    </section>
+    
+    <div class="modal" id="detailModal">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeDetail()">×</button>
+
+    <h2 id="detailTitle"></h2>
+    <p id="detailDesc"></p>
+
+    <h3>Fitur:</h3>
+    <ul id="detailFeatures"></ul>
+
+    <a href="https://wa.me/6289524501105" class="wa-btn" target="_blank">
+      Hubungi Admin
+    </a>
+  </div>
+</div>
+
+    <footer>
+
+        <p>
+            © 2026 KazeraaID • Roblox Development
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>position

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KazeraaID Minecraft Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="../index.html" class="back-btn">←</a>
+        <h3>Minecraft Server</h3>
+    </div>
+
+    <section class="hero">
+        <h1>⛏ Minecraft Server</h1>
+        <p>Jasa setup server Minecraft, install plugin, panel hosting, dan optimasi server.</p>
+    </section>
+
+    <section class="running-text">
+        <div>
+            ⛏ Minecraft Server • Setup Plugin • Panel Pterodactyl • Bedrock & Java • Optimasi Server •
+        </div>
+    </section>
+
+    <section class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari layanan Minecraft..." onkeyup="searchMinecraft()">
+    </section>
+
+    <section class="popular-section">
+        <h2>🔥 Layanan Unggulan</h2>
+
+        <div class="popular-grid">
+            <div class="popular-card">
+                <div class="popular-icon">🧱</div>
+                <h3>Setup Server</h3>
+                <p>Server Minecraft siap pakai.</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">🔌</div>
+                <h3>Install Plugin</h3>
+                <p>Plugin sesuai kebutuhan.</p>
+            </div>
+
+            <div class="popular-card">
+                <div class="popular-icon">🚀</div>
+                <h3>Optimasi Server</h3>
+                <p>Lebih stabil dan ringan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>⭐ Mengapa Memilih KazeraaID?</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Setup Cepat</h3>
+                <p>Server dibantu sampai siap digunakan.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Rapi & Aman</h3>
+                <p>Konfigurasi dibuat lebih tertata.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛠️</div>
+                <h3>Custom Request</h3>
+                <p>Bisa request mode, plugin, dan fitur.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Fast Response</h3>
+                <p>Admin siap membantu jika ada kendala.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>📦 Semua Layanan</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card" onclick="openDetail('🧱 Setup Server Minecraft','Jasa setup server Minecraft sampai siap dipakai.','Java Edition, Bedrock Edition, Panel Setup, Basic Config')">
+                <div class="project-icon">🧱</div>
+                <h3>Setup Server Minecraft</h3>
+                <p>Server siap pakai.</p>
+            </div>
+
+            <div class="project-card" onclick="openDetail('🔌 Install Plugin','Jasa install dan konfigurasi plugin Minecraft.','EssentialsX, LuckPerms, WorldEdit, Economy, AntiCheat')">
+                <div class="project-icon">🔌</div>
+                <h3>Install Plugin</h3>
+                <p>Plugin sesuai kebutuhan.</p>
+            </div>
+
+            <div class="project-card" onclick="openDetail('🚀 Optimasi Server','Optimasi server Minecraft agar lebih stabil.','PaperMC, Purpur, View Distance, Entity Limit, Lag Reduction')">
+                <div class="project-icon">🚀</div>
+                <h3>Optimasi Server</h3>
+                <p>Server lebih ringan.</p>
+            </div>
+
+            <div class="project-card" onclick="openDetail('🎮 Server Survival','Setup server survival dengan fitur lengkap.','Spawn, Economy, Claim Land, Rank, Shop')">
+                <div class="project-icon">🎮</div>
+                <h3>Server Survival</h3>
+                <p>Survival siap main.</p>
+            </div>
+
+            <div class="project-card" onclick="openDetail('🏙️ Server Roleplay','Setup server roleplay Minecraft.','Role System, Economy, Jobs, City Setup, Permission')">
+                <div class="project-icon">🏙️</div>
+                <h3>Server Roleplay</h3>
+                <p>Roleplay custom.</p>
+            </div>
+
+            <div class="project-card" onclick="openDetail('🚀 Panel Pterodactyl Minecraft','Setup Minecraft di panel Pterodactyl.','Server Egg, Allocation Port, Console Setup, Startup Config')">
+                <div class="project-icon">🚀</div>
+                <h3>Panel Minecraft</h3>
+                <p>Setup via panel.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeDetail()">×</button>
+
+            <h2 id="detailTitle"></h2>
+            <p id="detailDesc"></p>
+
+            <h3>Fitur:</h3>
+            <ul id="detailFeatures"></ul>
+
+            <a href="https://wa.me/6289524501105" class="wa-btn" target="_blank">
+                Hubungi Admin
+            </a>
+        </div>
+    </div>
+    
+    <div class="modal" id="detailModal">
+    <div class="modal-box">
+        <button class="close-btn" onclick="closeDetail()">×</button>
+
+        <h2 id="detailTitle"></h2>
+        <p id="detailDesc"></p>
+
+        <h3>Fitur:</h3>
+        <ul id="detailFeatures"></ul>
+
+        <a href="https://wa.me/6289524501105" class="wa-btn" target="_blank">
+            Hubungi Admin
+        </a>
+    </div>
+</div>
+
+    <footer>
+        <p>© 2026 KazeraaID • Minecraft Server</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
